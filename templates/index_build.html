@@ -18,12 +18,12 @@
 
         <!-- Vendor Stylesheets -->
         <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700%7CRoboto:300,400,700" rel="stylesheet">
-        <link href="{{ url_for('static', filename='stylesheets/material-design-iconic-font.min.css')}}"/>
-        <link href="{{ url_for('static', filename='stylesheets/all.min.css') }}"/>
-        <link href="{{ url_for('static', filename='stylesheets/aos.css') }}"/>
+        <link href="{{url_for('static', filename='stylesheets/material-design-iconic-font.min.css')}}"/>
+        <link href="{{url_for('static', filename='stylesheets/all.min.css')}}"/>
+        <link href="{{url_for('static', filename='stylesheets/aos.css')}}"/>
 
         <!-- Theme Stylesheets -->
-        <link href="{{ url_for('static', filename='stylesheets/theme.css') }}"/>
+        <link href="{{url_for('static', filename='stylesheets/theme.css')}}"/>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129313359-1"></script>
@@ -49,7 +49,7 @@
         <!-- Header -->
         <header class="spyre-navbar navbar navbar-expand-lg bg-secondary navbar-dark fixed-top align-items-center" data-transparent data-text-color="#ffffff">
             <div class="container">
-                <a class="navbar-brand mr-lg-5 mr-xl-7" href="../pages/index.html">
+                <a class="navbar-brand mr-lg-5 mr-xl-7" href="https://raw.githubusercontent.com/HayesAJ83/FlaskTest/main/pages/index_build.html">
                     <img src="https://raw.githubusercontent.com/HayesAJ83/FlaskTest/main/assets/img/logo_SN.svg" class="d-none d-lg-block" alt="Spyre" width="183" />
                     <img src="https://raw.githubusercontent.com/HayesAJ83/FlaskTest/main/assets/img/logo_SN.svg" class="d-block d-lg-none" alt="Spyre" width="150" />
                 </a>
@@ -218,7 +218,6 @@
                             <h2 class="mb-5 fw-medium text-secondary text-uppercase">Main Features</h2>
                             <p>The powerful features simulate how surgical terms are used, 
                                 to help you quickly deepen your understanding.</p>
-
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -439,17 +438,16 @@
         </footer>
         <!-- End of Footer -->
 
-
         <!-- Core Javascripts -->
-        <script src="https://raw.githubusercontent.com/HayesAJ83/FlaskTest/main/assets/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="https://raw.githubusercontent.com/HayesAJ83/FlaskTest/main/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-        <script src="https://raw.githubusercontent.com/HayesAJ83/FlaskTest/main/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-
+        <script src="{{url_for('static', filename='stylesheets/jquery.min.js')}}"></script>
+        <script src="{{url_for('static', filename='stylesheets/popper.min.js')}}"></script>
+        <script src="{{url_for('static', filename='stylesheets/bootstrap.min.js')}}"></script>
+ 
         <!-- Vendor Javascripts -->
-        <script src="https://raw.githubusercontent.com/HayesAJ83/FlaskTest/main/assets/vendor/rellax/rellax.min.js"></script>
-        <script src="https://raw.githubusercontent.com/HayesAJ83/FlaskTest/main/assets/vendor/aos/dist/aos.js"></script>
+        <script src="{{url_for('static', filename='stylesheets/rellax.min.js')}}"></script>
+        <script src="{{url_for('static', filename='stylesheets/aos.js')}}"></script>
 
         <!-- Theme Javascripts -->
-        <script src="https://raw.githubusercontent.com/HayesAJ83/FlaskTest/main/assets/js/theme.js"></script>
+        <script src="{{url_for('static', filename='stylesheets/theme.js')}}"></script>
     </body>
 </html>
